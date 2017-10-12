@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">WhatsUp</string>
+    <string name="title_activity_intro">IntroActivity</string>
+    <string name="title_activity_login">Sign in</string>
+    
+    <!--Common Button Texts -->
+    <string name="register_btn_txt">Register</string>
+    <string name="login_btn_txt">Login</string>
+
+
+    <string-array name="places_array">
+        <item>Hospitals</item>
+        <item>Hotels</item>
+        <item>Malls</item>
+        <item>Restaurants</item>
+    </string-array>
+
+</resources>

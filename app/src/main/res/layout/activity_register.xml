@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/padding"
+    android:background="@color/colorBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@android:color/white">
+
+        <ProgressBar
+            android:id="@+id/registerSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/usernameInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp">
+
+                <EditText
+                    android:id="@+id/usernameEditTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="6"
+                    android:hint="Username"
+                    android:inputType="text"
+                    android:textSize="12dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/emailInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp">
+
+                <EditText
+                    android:id="@+id/emailEditTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="6"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:textSize="12dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/passwordInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp">
+
+                <EditText
+                    android:id="@+id/passwordEditTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="6"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textSize="12dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/retypePasswordInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp">
+
+                <EditText
+                    android:id="@+id/retypePasswordEditTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="6"
+                    android:hint="Retype Password"
+                    android:inputType="textPassword"
+                    android:textSize="12dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/birthdateInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp">
+
+                <EditText
+                    android:id="@+id/birthdayEditTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="6"
+                    android:hint="Birthdate"
+                    android:inputType="none"
+                    android:textSize="12dp"
+                    android:clickable="true"
+                    android:editable="false"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/genderTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="12dp"
+                    android:paddingLeft="6dp"
+                    android:text="Gender"
+                    android:textSize="12dp"
+                    android:gravity="center_vertical"/>
+
+                <RadioGroup
+                    android:id="@+id/genderRadioGrp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/genderTextView"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/maleRadioBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="Male"
+                        android:textSize="12dp"
+                        android:gravity="center_vertical"/>
+
+                    <RadioButton
+                        android:id="@+id/femaleRadioBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Female"
+                        android:textSize="12dp" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/provinceInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp">
+
+                <AutoCompleteTextView
+                    android:id="@+id/provinceAutocompTxtView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="6"
+                    android:hint="Province"
+                    android:inputType="textAutoComplete"
+                    android:textSize="12dp"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/municityInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp">
+
+                <AutoCompleteTextView
+                    android:id="@+id/municityAutocompTxtView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="6"
+                    android:hint="Municipality/City"
+                    android:inputType="textAutoComplete"
+                    android:textSize="12dp"/>
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/registerBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorAccent"
+            android:text="Register"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+</LinearLayout>

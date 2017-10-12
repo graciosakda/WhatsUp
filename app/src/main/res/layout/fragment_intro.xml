@@ -1,0 +1,36 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding">
+
+    <ImageView
+        android:id="@+id/introImgView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/loginBtn"
+        android:layout_marginBottom="@dimen/margin_bet_btns"
+        android:background="@color/colorAccent"
+        android:text="@string/register_btn_txt"
+        android:textColor="@android:color/white"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_above="@+id/tab_layout"
+        android:layout_marginBottom="@dimen/margin_bottom_scrn"
+        android:background="@color/colorAccent"
+        android:text="@string/login_btn_txt"
+        android:textColor="@android:color/white"
+        android:visibility="invisible"/>
+
+</RelativeLayout>
